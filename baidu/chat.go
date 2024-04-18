@@ -31,6 +31,7 @@ type ChatCompletionRequest struct {
 	TopP         float32                 `json:"top_p,omitempty"`
 	PenaltyScore float32                 `json:"penalty_score,omitempty"`
 	Stream       bool                    `json:"stream,omitempty"`
+	System       string                  `json:"system,omitempty"`
 	UserId       string                  `json:"user_id,omitempty"`
 }
 

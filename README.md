@@ -11,7 +11,7 @@
 ## Installation
 
 ```
-go get github.com/liudding/go-llm-api
+go get github.com/freeeverett/go-llm-api
 ```
 要求 go 版本最低是 1.18.
 
@@ -26,7 +26,7 @@ package main
 import (
 	"context"
 	"fmt"
-	 "github.com/liudding/github.com/liudding/go-llm-api/baidu"
+	 "github.com/liudding/github.com/freeeverett/go-llm-api/baidu"
 )
 
 func main() {
