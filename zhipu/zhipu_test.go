@@ -1,8 +1,8 @@
 package zhipu_test
 
 import (
-	"github.com/liudding/go-llm-api/internal/test"
-	. "github.com/liudding/go-llm-api/zhipu"
+	"github.com/freeeverett/go-llm-api/internal/test"
+	. "github.com/freeeverett/go-llm-api/zhipu"
 )
 
 func setupZhipuAITestServer() (client *Client, server *test.ServerTest, teardown func()) {

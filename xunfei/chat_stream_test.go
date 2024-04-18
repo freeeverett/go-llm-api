@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/liudding/go-llm-api/internal/test/checks"
-	. "github.com/liudding/go-llm-api/xunfei"
+	"github.com/freeeverett/go-llm-api/internal/test/checks"
+	. "github.com/freeeverett/go-llm-api/xunfei"
 	"io"
 	"testing"
 )
@@ -37,7 +37,7 @@ func TestCreateChatCompletionStreamOnRealServer(t *testing.T) {
 			return
 		}
 
-		//fmt.Printf("error: \n")
+		// fmt.Printf("error: \n")
 		if len(response.Payload.Choices.Text) > 0 {
 			fmt.Printf(response.Payload.Choices.Text[0].Content)
 		} else {

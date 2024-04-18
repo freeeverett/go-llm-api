@@ -1,8 +1,8 @@
 package baidu_test
 
 import (
-	. "github.com/liudding/go-llm-api/baidu"
-	"github.com/liudding/go-llm-api/internal/test"
+	. "github.com/freeeverett/go-llm-api/baidu"
+	"github.com/freeeverett/go-llm-api/internal/test"
 	"net/http"
 )
 

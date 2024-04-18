@@ -2,7 +2,7 @@ package sense_test
 
 import (
 	"context"
-	. "github.com/liudding/go-llm-api/sense"
+	. "github.com/freeeverett/go-llm-api/sense"
 	"testing"
 	"time"
 )

@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	utils "github.com/liudding/go-llm-api/internal"
-	"github.com/liudding/go-llm-api/internal/sse"
+	utils "github.com/freeeverett/go-llm-api/internal"
+	"github.com/freeeverett/go-llm-api/internal/sse"
 	"io"
 	"net/http"
 )

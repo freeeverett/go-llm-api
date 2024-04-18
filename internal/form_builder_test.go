@@ -3,9 +3,9 @@ package internal_test //nolint:testpackage // testing private field
 import (
 	"bytes"
 	"errors"
-	. "github.com/liudding/go-llm-api/internal"
-	"github.com/liudding/go-llm-api/internal/test"
-	"github.com/liudding/go-llm-api/internal/test/checks"
+	. "github.com/freeeverett/go-llm-api/internal"
+	"github.com/freeeverett/go-llm-api/internal/test"
+	"github.com/freeeverett/go-llm-api/internal/test/checks"
 	"os"
 	"testing"
 )

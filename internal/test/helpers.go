@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/liudding/go-llm-api/internal/test/checks"
+	"github.com/freeeverett/go-llm-api/internal/test/checks"
 	"net/http"
 	"os"
 	"testing"

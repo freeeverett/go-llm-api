@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/liudding/go-llm-api/internal/test/checks"
-	. "github.com/liudding/go-llm-api/minmax"
+	"github.com/freeeverett/go-llm-api/internal/test/checks"
+	. "github.com/freeeverett/go-llm-api/minmax"
 	"io"
 	"testing"
 )
@@ -43,7 +43,7 @@ func TestCreateChatCompletionStreamOnRealServer(t *testing.T) {
 			return
 		}
 
-		//fmt.Printf("error: \n")
+		// fmt.Printf("error: \n")
 		fmt.Printf("resp: %s\n", response.Choices[0].Delta)
 	}
 }

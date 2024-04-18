@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	utils "github.com/liudding/go-llm-api/internal"
+	utils "github.com/freeeverett/go-llm-api/internal"
 	"io"
 	"regexp"
 	"strings"
@@ -168,7 +168,7 @@ func (stream *EventStreamReader) processEvent() (*Event, error) {
 	return &event, err
 }
 
-//func (stream *EventStreamReader) unmarshalError() (errResp *zhipu.ErrorResponse) {
+// func (stream *EventStreamReader) unmarshalError() (errResp *zhipu.ErrorResponse) {
 //	errBytes := stream.errAccumulator.Bytes()
 //	if len(errBytes) == 0 {
 //		return
@@ -180,7 +180,7 @@ func (stream *EventStreamReader) processEvent() (*Event, error) {
 //	}
 //
 //	return
-//}
+// }
 
 // ReadEvent scans the EventStream for events.
 func (stream *EventStreamReader) ReadEvent() ([]byte, error) {

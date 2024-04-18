@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/liudding/go-llm-api/internal/test/checks"
-	. "github.com/liudding/go-llm-api/tencent"
+	"github.com/freeeverett/go-llm-api/internal/test/checks"
+	. "github.com/freeeverett/go-llm-api/tencent"
 	"io"
 	"testing"
 )
@@ -20,8 +20,8 @@ func TestCreateChatCompletionStreamOnRealServer(t *testing.T) {
 			},
 		},
 		Temperature: 0.77,
-		//TopP: 1,
-		//QueryId:     "testest",
+		// TopP: 1,
+		// QueryId:     "testest",
 	})
 	checks.NoError(t, err, "CreateCompletionStream returned error")
 	defer stream.Close()
@@ -39,7 +39,7 @@ func TestCreateChatCompletionStreamOnRealServer(t *testing.T) {
 			return
 		}
 
-		//fmt.Printf("error: \n")
+		// fmt.Printf("error: \n")
 		fmt.Printf("resp: %s\n", response.Choices)
 	}
 }

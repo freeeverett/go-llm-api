@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	utils "github.com/liudding/go-llm-api/internal"
+	utils "github.com/freeeverett/go-llm-api/internal"
 	"io"
 	"net/http"
 	neturl "net/url"
@@ -141,7 +141,7 @@ func sendRequestStream[T streamable](client *Client, req *http.Request) (*stream
 		return nil, err
 	}
 	if isFailureStatusCode(resp) {
-		//return nil, client.handleErrorResp(resp)
+		// return nil, client.handleErrorResp(resp)
 	}
 	return newStreamReader(resp, client.config.EmptyMessagesLimit), nil
 }
@@ -186,7 +186,7 @@ func (c *Client) fullURL(model string) string {
 
 func (c *Client) handleErrorResp(resp *http.Response) error {
 	var errRes ErrorResponse
-	//fmt.Printf("%s", resp.Body)
+	// fmt.Printf("%s", resp.Body)
 
 	err := json.NewDecoder(resp.Body).Decode(&errRes)
 	if err != nil || errRes.Error == nil {
@@ -200,6 +200,6 @@ func (c *Client) handleErrorResp(resp *http.Response) error {
 		return reqErr
 	}
 
-	//errRes.Error.HTTPStatusCode = resp.StatusCode
+	// errRes.Error.HTTPStatusCode = resp.StatusCode
 	return errRes.Error
 }

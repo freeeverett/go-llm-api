@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/liudding/go-llm-api/internal/test/checks"
-	. "github.com/liudding/go-llm-api/zhipu"
+	"github.com/freeeverett/go-llm-api/internal/test/checks"
+	. "github.com/freeeverett/go-llm-api/zhipu"
 	"io"
 	"testing"
 	"time"
@@ -22,10 +22,10 @@ func TestCreateChatCompletionStreamOnRealServer(t *testing.T) {
 				Content: "hi",
 			},
 		},
-		//RequestId:   "",
+		// RequestId:   "",
 		Incremental: true,
-		//ReturnType:  "",
-		//Ref:         ChatCompletionRef{},
+		// ReturnType:  "",
+		// Ref:         ChatCompletionRef{},
 	}, ModelChatGLMStd)
 	checks.NoError(t, err, "CreateCompletionStream returned error")
 	defer stream.Close()
@@ -43,7 +43,7 @@ func TestCreateChatCompletionStreamOnRealServer(t *testing.T) {
 			return
 		}
 
-		//fmt.Printf("error: \n")
+		// fmt.Printf("error: \n")
 		fmt.Printf("resp: %s\n", response.Data)
 	}
 }

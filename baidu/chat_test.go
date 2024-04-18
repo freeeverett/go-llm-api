@@ -2,7 +2,7 @@ package baidu_test
 
 import (
 	"context"
-	. "github.com/liudding/go-llm-api/baidu"
+	. "github.com/freeeverett/go-llm-api/baidu"
 	"testing"
 )
 
