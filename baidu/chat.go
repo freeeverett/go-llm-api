@@ -32,6 +32,7 @@ type ChatCompletionRequest struct {
 	PenaltyScore float32                 `json:"penalty_score,omitempty"`
 	Stream       bool                    `json:"stream,omitempty"`
 	UserId       string                  `json:"user_id,omitempty"`
+	System       string                  `json:"system,omitempty"`
 }
 
 // ChatCompletionResponse represents a response structure for chat completion API.
